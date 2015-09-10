@@ -35,7 +35,7 @@ npm install angular-restmod-validation -d
 #### Include it in your project
 Add the angular-restmod-validation file from the `dist` directory to your project. 
 ```html
-<script type="text/javascript" src="js/angular-restmod-validation/angular-restmod-validation.min.js"></script>
+<script type="text/javascript" src="angular-restmod-validation.min.js"></script>
 ```
 
 Next register the plugin:
