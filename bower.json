@@ -1,6 +1,6 @@
 {
     "name": "angular-restmod-validation",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "A simple validation system for validating your Angular Restmod models.",
     "license": "MIT",
     "homepage": "https://github.com/dirkgroenen/angular-restmod-validation",

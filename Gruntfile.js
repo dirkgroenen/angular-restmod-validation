@@ -6,6 +6,7 @@ module.exports = function(grunt){
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-ngmin');
 
     /**
      * This is the configuration object Grunt uses to give each
@@ -45,7 +46,7 @@ module.exports = function(grunt){
                     banner: '<%= meta.banner %>'
                 },
                 files: {
-                    'dist/angular-restmod-validation.min.js': 'src/angular-restmod-validation.js'
+                    'dist/angular-restmod-validation.min.js': 'dist/angular-restmod-validation.js'
                 }
             }
         },
@@ -77,7 +78,25 @@ module.exports = function(grunt){
             src: [
                 'src/angular-restmod-validation.js'
             ],
-        }
+        },
+
+        /**
+          * `ng-min` annotates the sources before minifying. That is, it allows us
+          * to code without the array syntax.
+          */
+        ngmin: {
+            compile: {
+                files: [
+                    {
+                        src: ['angular-restmod-validation.js'],
+                        cwd: 'src',
+                        dest: 'dist',
+                        expand: true
+                    }
+                ]
+            }
+        },
+
     };
 
     grunt.initConfig(taskConfig);
@@ -95,5 +114,5 @@ module.exports = function(grunt){
     /**
      * Task which will minify the source and place it in the distribute directory
      */
-    grunt.registerTask( 'compile', [ 'jshint:src', 'uglify:compile' ] );
+    grunt.registerTask( 'compile', [ 'jshint:src', 'ngmin:compile', 'uglify:compile' ] );
 }
