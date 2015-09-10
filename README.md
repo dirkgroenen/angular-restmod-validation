@@ -72,6 +72,11 @@ restmod.model('/users').mix({
     [..]
 ```
 
+### $isValid
+You can also call the `$isValid` method manually. This will return true or false depending on the model's validity.
+
+The validation error will be saved in the model as `$validationError`.
+
 ## Todo
 - This is just a simple validation plugin, but I will investigate other plugins and frameworks to see how we can extend this to be more powerful. 
 - Make sure requests don't fire if the model is invalid. [angular-restmod#326](https://github.com/platanus/angular-restmod/issues/326)
