@@ -1,6 +1,8 @@
 # Angular Restmod - Validation 
 A simple validation system which will validate your [Angular Restmod](https://github.com/platanus/angular-restmod) models. 
 
+![](https://img.shields.io/bower/v/angular-restmod-validation.svg) ![](https://img.shields.io/npm/v/angular-restmod-validation.svg)
+
 Validating your models will be as easy as:
 ```javascript
 restmod.model('/users').mix({
