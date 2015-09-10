@@ -1,0 +1,29 @@
+{
+    "name": "angular-restmod-validation",
+    "version": "1.0.0",
+    "description": "A simple validation system for validating your Angular Restmod models.",
+    "license": "MIT",
+    "homepage": "https://github.com/dirkgroenen/angular-restmod-validation",
+    "authors": [
+        "Dirk Groenen <dirk@bitlabs.nl>"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/dirkgroenen/angular-restmod-validation.git"
+    },
+    "main": "dist/angular-restmod-validation.min.js",
+    "ignore": [
+        "**/.*",
+        "Gruntfile.js",
+        "package.json",
+        "src"
+    ],
+    "dependencies": {
+        "angular": "~1",
+        "angular-restmod": "^1.1.1"
+    },
+    "devDependencies": {
+        "angular": "~1",
+        "angular-restmod": "^1.1.1"
+    }
+}

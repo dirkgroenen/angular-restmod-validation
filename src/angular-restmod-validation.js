@@ -1,8 +1,5 @@
-'use strict';
-
-angular.module('restmod')
-
-.factory('Validation', function(restmod) {
+angular.module('restmod').factory('Validation', function(restmod) {
+    'use strict';
 
     return restmod.mixin(function() {
 
