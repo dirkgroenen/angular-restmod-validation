@@ -1,7 +1,10 @@
 # Angular Restmod - Validation 
 A simple validation system which will validate your [Angular Restmod](https://github.com/platanus/angular-restmod) models. 
 
-![](https://img.shields.io/bower/v/angular-restmod-validation.svg) ![](https://img.shields.io/npm/v/angular-restmod-validation.svg)
+![](https://img.shields.io/bower/v/angular-restmod-validation.svg) 
+![](https://img.shields.io/npm/v/angular-restmod-validation.svg)
+[![Support me with some coffee](https://img.shields.io/badge/donate-paypal-orange.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QUDAJBCJVP2G6)
+[![Support me with some coffee](https://img.shields.io/badge/donate-pledgie-orange.svg)](https://pledgie.com/campaigns/28130)
 
 Validating your models will be as easy as:
 ```javascript
